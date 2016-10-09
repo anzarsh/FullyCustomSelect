@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>
+        fully custom select
+      </title>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script type="text/javascript" src="js/az-select.js"></script>
+   </head>
+   <body>
+	    <div style="display: inline-block; width: 150px;">
+	   		<div class="az-select">
+				<select name="" id="">
+					<option value="1">Санкт-Петербург</option>
+					<option value="2">Москва</option>
+					<option value="3">Красноярск</option>
+				</select>
+			</div>
+		</div>
+		<div style="display: inline-block; width: 150px;">
+	   		<div class="az-select">
+				<select name="" id="">
+					<option value="1">Первый</option>
+					<option value="2">Второй</option>
+					<option value="3">Третий</option>
+				</select>
+			</div>
+		</div>
+   </body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.az-select').az_select({'class': 'class1 class2'});
+	});
+</script>
